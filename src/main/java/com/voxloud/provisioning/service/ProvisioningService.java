@@ -1,6 +1,8 @@
 package com.voxloud.provisioning.service;
 
+import org.springframework.http.ResponseEntity;
+
 public interface ProvisioningService {
 
-    String getProvisioningFile(String macAddress);
+    ResponseEntity<?> getProvisioningFile(String macAddress);
 }
